@@ -12,7 +12,6 @@ class App extends Component{
       hits:[]
     }
   }
-
   componentWillMount(){
     fetch(API)
     .then(response => response.json())
@@ -29,39 +28,37 @@ class App extends Component{
   //MÉTODO QUE PERMITE QUE SE EJECUTE EL PROCESO UNA VEZ 
   //RENDER() SE EJECUTA
   Search = () =>{
-    const selectOptions = document.querySelector('.selectOptions');
-    value = selectOptions.value;
+    const input = document.querySelector('.input');
+   
+    value = input.value;
+    console.log(value);
+
+    const { hits } = this.state;
+    {hits.map(hit =>
+      
+      {if (hit.name === value)(
+        console.log(nameApi)
+      )
+      }
+      )
+      }
     //DE ACUERDO CON LA CATEGORÍA SELECCIONADA SE BUSCA EN LA API
   }
       
-  
   //EVENTO PARA SELECCIONAR CATEGORIAS
-  
-      
-      
   
   //SE RENDERIZAN LOS RESULTADO
   render() {
-    const { hits } = this.state;
     return (
       <div>
         {/* DE ESTA MANERA RECORRO LA API Y MUESTRO LOS NOMBRES, 
         CON MAP, EN VEZ DE CON UN BUCLE FOR.
         EL SELECT LO COLOCO FUERA DEL MAP PORQUE NECESITO
         ES CREAR LAS OPCIONES */}
-        <input className = 'selectOptions'>
+        <input className = 'input'>
         </input>
         <button onClick={this.Search}>Buscar</button>
-        {hits.map(hit =>
-        {if (hit.name === value?(
-            console.log('si')
-        ):(
-          console.log('no')
-        )
-        );
-        }
-        )
-        }
+        
       </div>
     );
   }

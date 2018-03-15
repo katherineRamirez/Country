@@ -1,5 +1,35 @@
 .Containerinfo{
-  border: 2px blue solid;
-  height: 20em;
+/*   border: 2px blue solid;
+ */  height: 10em;
   width: 100%;
 }
+
+.Containerinfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.Containercapital{
+    width: 10em;
+/*     background-color: pink;
+ */}
+.Containerpopulation{
+  width: 10em;
+/*   background-color: pink;
+ */}
+.Containerlanguages{
+  width: 10em;
+/*   background-color: pink;
+ */}
+.Containercurrencies{
+  width: 10em;
+/*   background-color: pink;
+ */}
+.Containersubregion{
+  width: 10em;
+/*   background-color: pink;
+ */}
+
+

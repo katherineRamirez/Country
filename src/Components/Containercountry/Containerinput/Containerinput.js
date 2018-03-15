@@ -1,6 +1,12 @@
 //DOCUMENTACIÓN: https://www.robinwieruch.de/react-fetching-data/
 import React, { Component } from 'react';
 import Containerinfo from './Containerinfo';
+import capital from './images/capital.png';
+import population from './images/population.png';
+import language from './images/language.png';
+import coin from './images/coin.png';
+import continent from './images/continent.png';
+
 
 //HACER UNA CONSTANTE QUE CONTENGA EL URL DE LA API
 const API = 'https://restcountries.eu/rest/v2/all';
@@ -34,18 +40,24 @@ class App extends Component{
     value = input.value;
 
     const { hits } = this.state;
-
+let flag;
     {hits.map(hit =>
       
       {if (hit.name === value)(
-        document.querySelector('.Capital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
-        document.querySelector('.Population').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.population))),
-        // document.querySelector('.Languages').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.languages))),
-/*         document.querySelector('.Capital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital.currencies[0].name))),
- */        document.querySelector('.Region').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.nativeName)))
+        document.querySelector('.Containercapital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
+        document.querySelector('.Containercapital').appendChild(document.createElement('img')).setAttribute('src', capital),
 
-        
+        document.querySelector('.Containerpopulation').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.population))),
+        document.querySelector('.Containerpopulation').appendChild(document.createElement('img')).setAttribute('src', population),
 
+        document.querySelector('.Containerlanguages').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.languages[0].name))),
+        document.querySelector('.Containerlanguages').appendChild(document.createElement('img')).setAttribute('src', language),
+
+        document.querySelector('.Containercurrencies').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.currencies[0].name))),
+        document.querySelector('.Containercurrencies').appendChild(document.createElement('img')).setAttribute('src', coin),
+
+        document.querySelector('.Containersubregion').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.subregion))),
+        document.querySelector('.Containersubregion').appendChild(document.createElement('img')).setAttribute('src', continent)
       )
       }
       )

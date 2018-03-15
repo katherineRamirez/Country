@@ -1,5 +1,6 @@
 //DOCUMENTACIÓN: https://www.robinwieruch.de/react-fetching-data/
 import React, { Component } from 'react';
+import Containerinfo from './Containerinfo';
 
 //HACER UNA CONSTANTE QUE CONTENGA EL URL DE LA API
 const API = 'https://restcountries.eu/rest/v2/all';
@@ -29,15 +30,22 @@ class App extends Component{
   //RENDER() SE EJECUTA
   Search = () =>{
     const input = document.querySelector('.input');
-   
+    let data;
     value = input.value;
-    console.log(value);
 
     const { hits } = this.state;
+
     {hits.map(hit =>
       
       {if (hit.name === value)(
-        console.log(nameApi)
+        document.querySelector('.Capital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
+        document.querySelector('.Population').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.population))),
+        // document.querySelector('.Languages').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.languages))),
+/*         document.querySelector('.Capital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital.currencies[0].name))),
+ */        document.querySelector('.Region').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.nativeName)))
+
+        
+
       )
       }
       )
@@ -58,9 +66,10 @@ class App extends Component{
         <input className = 'input'>
         </input>
         <button onClick={this.Search}>Buscar</button>
-        
+        <div>{this.nameinput}</div>
+        <Containerinfo></Containerinfo>
       </div>
-    );
+    );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   }
 }
 

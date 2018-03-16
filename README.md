@@ -28,6 +28,12 @@ npm install
 
 ## Wireframe
 
+![Primero](src/Components/Containercountry/Containerinput/images/primero.pdf)
+
+![Segundo](src/Components/Containercountry/Containerinput/images/segundo.pdf)
+
+![Tercero](src/Components/Containercountry/Containerinput/images/tercero.pdf)
+
 ## Colaboradoras
 
 :smile: [Claudina Cortés](https://github.com/claudinacr),

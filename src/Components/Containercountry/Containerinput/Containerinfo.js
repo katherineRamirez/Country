@@ -1,14 +1,13 @@
 import React from 'react';
 import Containerinput from './Containerinput';
-import './style.css';
+import './styleIfo.css';
 import Containercapital from './Containercapital';
 import Containerpopulation from './Containerpopulation';
 import Containerlanguages from './Containerlanguages';
 import Containercurrencies from './Containercurrencies';
 import Containersubregion from './Containersubregion';
 import Containerflag from './Containerflag';
-import Containermap from './ContainerMap'
-import Mapa from './map';
+
 
 
 const Containerinfo = () =>(

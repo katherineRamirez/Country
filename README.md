@@ -28,11 +28,12 @@ npm install
 
 ## Wireframe
 
-![Primero](Components/Containercountry/Containerinput/images/primero.pdf)
+<img src='src/Components/Containercountry/Containerinput/images/primero.pdf'/>
 
-![Segundo](Components/Containercountry/Containerinput/images/segundo.pdf)
+<img src = 'src/Components/Containercountry/Containerinput/images/segundo.pdf'/>
+<img src = 
+'src/Components/Containercountry/Containerinput/images/tercero.pdf'/>
 
-![Tercero](src/Components/Containercountry/Containerinput/images/tercero.pdf)
 
 ## Colaboradoras
 

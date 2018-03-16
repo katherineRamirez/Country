@@ -47,10 +47,8 @@ let flag;
       {if (hit.name === value)(
         document.querySelector('.header').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.name))),
 
-<<<<<<< Updated upstream
-=======
+
         console.log('o', hit.name),
->>>>>>> Stashed changes
         document.querySelector('.Containercapital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
         document.querySelector('.Containercapital').appendChild(document.createElement('img')).setAttribute('src', capital),
 

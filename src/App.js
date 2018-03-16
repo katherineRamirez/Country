@@ -10,17 +10,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<<<<<<< Updated upstream
         <header className='header'></header>
-        <Containercountry>
-=======
-        <presentation className='presentation' ></presentation>
-        <header className='header'></header>
-        <Containercountry className='Containercountry' >
->>>>>>> Stashed changes
+        <Containercountry  className='Containercountry'>
+        <presentation className='presentation' >
+
+        </presentation>
         </Containercountry>
       </div>
-    );
+    )
   }
 }
 

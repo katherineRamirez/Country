@@ -25,3 +25,24 @@
   		height: 200px;
 		}
 }
+
+@media screen and (min-width: 200px) and (max-width: 399px){
+    .header{
+      height: 3em;
+      width: 135%;
+      padding-bottom: 1em;
+    }
+    h3{
+      font-size: 0.60em;
+      margin-top: 2em;
+    }
+    input{
+      width: 100%;
+      margin-left: 2em;
+      margin-top: 3em;
+    }
+     button{
+      margin-top: 0;
+      margin-left: 5em;
+    }
+}

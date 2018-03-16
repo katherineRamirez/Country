@@ -6,7 +6,11 @@ import population from './images/population.png';
 import language from './images/language.png';
 import coin from './images/coin.png';
 import continent from './images/continent.png';
-import Apps from './map';
+import Containermap from './ContainerMap';
+import Mapa from './map';
+
+import './style.css';
+
 
 //HACER UNA CONSTANTE QUE CONTENGA EL URL DE LA API
 const API = 'https://restcountries.eu/rest/v2/all';
@@ -37,8 +41,11 @@ class App extends Component{
   Search = () =>{
     const input = document.querySelector('.input');
 
+    input.innerHTML = '';
+
     let data;
-    value = input.value;
+    //USO DE MÉTODOS DE JAVASCRIPT PARA COLOCAR LA PRIMERA LETRA DE LA ENTRADA DEL USUARIO EN MAYUSCULA
+    value = input.value.charAt(0).toUpperCase() + input.value.slice(1);
 
     const { hits } = this.state;
 let flag;
@@ -46,30 +53,38 @@ let flag;
     {hits.map(hit =>
     
       {if (hit.name === value)(
-        
-        console.log(hit.latlng[0]),
-        console.log(hit.latlng[1]),
+
+        document.querySelector('.header').innerHTML = '',
         document.querySelector('.header').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.name))),
 
-
-        document.querySelector('.Containercapital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
+        document.querySelector('.Containercapital').innerHTML = '',
+        document.querySelector('.Containercapital').appendChild(document.createElement('p').appendChild(document.createTextNode('CAPITAL'))),
+        document.querySelector('.Containercapital').appendChild(document.createElement('p'))).appendChild(document.createTextNode(hit.capital),
         document.querySelector('.Containercapital').appendChild(document.createElement('img')).setAttribute('src', capital),
 
-        document.querySelector('.Containerpopulation').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.population))),
+        document.querySelector('.Containerpopulation').innerHTML = '',
+        document.querySelector('.Containerpopulation').appendChild(document.createElement('p').appendChild(document.createTextNode('POBLACIÓN'))),
+        document.querySelector('.Containerpopulation').appendChild(document.createElement('p')).appendChild(document.createTextNode(hit.population)),
         document.querySelector('.Containerpopulation').appendChild(document.createElement('img')).setAttribute('src', population),
 
-        document.querySelector('.Containerlanguages').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.languages[0].name))),
+        document.querySelector('.Containerlanguages').innerHTML = '',
+        document.querySelector('.Containerlanguages').appendChild(document.createElement('p').appendChild(document.createTextNode('IDIOMA'))),
+        document.querySelector('.Containerlanguages').appendChild(document.createElement('p')).appendChild(document.createTextNode(hit.languages[0].name)),
         document.querySelector('.Containerlanguages').appendChild(document.createElement('img')).setAttribute('src', language),
 
-        document.querySelector('.Containercurrencies').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.currencies[0].name))),
+        document.querySelector('.Containercurrencies').innerHTML = '',
+        document.querySelector('.Containercurrencies').appendChild(document.createElement('p').appendChild(document.createTextNode('MONEDA'))),
+        document.querySelector('.Containercurrencies').appendChild(document.createElement('p')).appendChild(document.createTextNode(hit.currencies[0].name)),
         document.querySelector('.Containercurrencies').appendChild(document.createElement('img')).setAttribute('src', coin),
 
-        document.querySelector('.Containersubregion').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.subregion))),
+        document.querySelector('.Containersubregion').innerHTML = '',
+        document.querySelector('.Containersubregion').appendChild(document.createElement('p').appendChild(document.createTextNode('SUBREGIÓN'))),
+        document.querySelector('.Containersubregion').appendChild(document.createElement('p')).appendChild(document.createTextNode(hit.subregion)),
         document.querySelector('.Containersubregion').appendChild(document.createElement('img')).setAttribute('src', continent),
 
-        document.querySelector('.Containerflag').appendChild(document.createElement('p').appendChild(document.createTextNode('Bandera'))),
+        document.querySelector('.Containerflag').innerHTML = '',
+        document.querySelector('.Containerflag').appendChild(document.createElement('p').appendChild(document.createTextNode('BANDERA'))),
         document.querySelector('.Containerflag').appendChild(document.createElement('img')).setAttribute('src', hit.flag)
-      
       )
       }
       )
@@ -87,13 +102,14 @@ let flag;
         CON MAP, EN VEZ DE CON UN BUCLE FOR.
         EL SELECT LO COLOCO FUERA DEL MAP PORQUE NECESITO
         ES CREAR LAS OPCIONES */}
-        <strong><label className = 'label'>QUE PAIS TE GUSTARIA CONOCER?</label></strong>
+        
         <input placeholder="Indique el nombre del país" className = 'input'>
         </input>
         <button className='button' onClick={this.Search}>Buscar</button>
-        <div>{this.nameinput}</div>
-        <Apps></Apps>
-        <Containerinfo></Containerinfo>
+        <Containerinfo>
+
+        </Containerinfo>
+
       </div>
     );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   }

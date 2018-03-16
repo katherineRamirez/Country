@@ -6,7 +6,7 @@ import population from './images/population.png';
 import language from './images/language.png';
 import coin from './images/coin.png';
 import continent from './images/continent.png';
-
+import Apps from './map';
 
 //HACER UNA CONSTANTE QUE CONTENGA EL URL DE LA API
 const API = 'https://restcountries.eu/rest/v2/all';
@@ -44,6 +44,8 @@ let flag;
     {hits.map(hit =>
       
       {if (hit.name === value)(
+        document.querySelector('.header').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.name))),
+
         document.querySelector('.Containercapital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
         document.querySelector('.Containercapital').appendChild(document.createElement('img')).setAttribute('src', capital),
 
@@ -75,10 +77,12 @@ let flag;
         CON MAP, EN VEZ DE CON UN BUCLE FOR.
         EL SELECT LO COLOCO FUERA DEL MAP PORQUE NECESITO
         ES CREAR LAS OPCIONES */}
-        <input className = 'input'>
+        <strong><label className = 'label'>QUE PAIS TE GUSTARIA CONOCER?</label></strong>
+        <input placeholder="Indique el nombre del país" className = 'input'>
         </input>
         <button onClick={this.Search}>Buscar</button>
         <div>{this.nameinput}</div>
+        <Apps></Apps>
         <Containerinfo></Containerinfo>
       </div>
     );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

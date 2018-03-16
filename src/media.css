@@ -1,0 +1,13 @@
+@media screen and (min-width: 400px) and (max-width: 600px){
+    .label, .input, .button{
+      position: relative;
+      top: 2em;
+    }
+		.Containercapital, .Containerpopulation, .Containerlanguages, .Containercurrencies, .Containersubregion, .Containerflag{
+			margin-top: 2em;
+		}
+		.map {
+			width: 30em;
+  		height: 20px;
+		}
+}

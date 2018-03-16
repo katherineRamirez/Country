@@ -7,8 +7,20 @@ El proyect **Country** tiene como propósito mostrar información de todos los p
 ![react-gmaps](https://img.shields.io/badge/react--gmaps-1.9.0-green.svg)
 ![react-google-maps-loader](https://img.shields.io/badge/react--google--maps--loader-4.1.0-red.svg)
 ![prop-types](https://img.shields.io/badge/prop--types-15.6.1-ff69b4.svg)
+![gh-pages](https://img.shields.io/badge/gh--pages-1.1.0-orange.svg)
 
-## Instalar dependencias
+## Que usamos
+
+Api Rest Countries: Api para encontrar información acerca de los países.
+
+## Instalación
+
+* Clonar repositorio
+
+```
+github.com/claudinacr/Country 
+```
+* Instalar las dependencias
 
 ```
 npm install 

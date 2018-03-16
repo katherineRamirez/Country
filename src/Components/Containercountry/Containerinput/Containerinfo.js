@@ -12,7 +12,6 @@ import Containerflag from './Containerflag';
 
 const Containerinfo = () =>(
     <div className = 'Containerinfo'>
-
         <Containercapital></Containercapital>
         <Containerpopulation></Containerpopulation>
         <Containerlanguages></Containerlanguages>

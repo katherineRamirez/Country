@@ -7,10 +7,7 @@ import population from './images/population.png';
 import language from './images/language.png';
 import coin from './images/coin.png';
 import continent from './images/continent.png';
-
-
 import './style.css';
-
 
 //HACER UNA CONSTANTE QUE CONTENGA EL URL DE LA API
 const API = 'https://restcountries.eu/rest/v2/all';
@@ -23,37 +20,34 @@ class App extends Component{
       hits:[]
     }
   }
-  componentWillMount(){
-    fetch(API)
-    .then(response => response.json())
-    //LA MANERA DE PLANTEAR LA BUSQUEDA DEPENDE DE CÓMO LA API
-    //MUESTRA LOS RESULTADOS. EJEMPLO: ({hits:data})
-    //EL SEGUNDO HIST QUIERE DECIR QUE LA API MUESTRA LOS
-    //RESULTADOS Y COMIENZA EL ENCABEZADO CON LA PALABRA hist
-    //SINO COMIENZA CON NADA COMO EN ESTE CASO, NO SE COLOCA NADA
-    .then(data => this.setState({ hits: data }),
 
-  );
+  //CICLO DE VIDA DONDE SE HACE CONSULTA A LA API
+  componentWillMount(){
+      fetch(API)
+      .then(response => response.json())
+      //LA MANERA DE PLANTEAR LA BUSQUEDA DEPENDE DE CÓMO LA API
+      //MUESTRA LOS RESULTADOS. EJEMPLO: ({hits:data})
+      //EL SEGUNDO HIST QUIERE DECIR QUE LA API MUESTRA LOS
+      //RESULTADOS Y COMIENZA EL ENCABEZADO CON LA PALABRA hist
+      //SINO COMIENZA CON NADA COMO EN ESTE CASO, NO SE COLOCA NADA
+      .then(data => this.setState({ hits: data }),
+    );
   }
   
-  //MÉTODO QUE PERMITE QUE SE EJECUTE EL PROCESO UNA VEZ 
-  //RENDER() SE EJECUTA
+  //EVENTO QUE SE EJECUTA CUANDO EL USUARIO HACE CLICK AL
+  //BOTÓN BUSCAR
   Search = () =>{
     const input = document.querySelector('.input');
-
+    //PARA LIMPIAR EL INPUT SE COLOCA DE ESTA MANERA
     input.innerHTML = '';
-
     let data;
     //USO DE MÉTODOS DE JAVASCRIPT PARA COLOCAR LA PRIMERA LETRA DE LA ENTRADA DEL USUARIO EN MAYUSCULA
     value = input.value.charAt(0).toUpperCase() + input.value.slice(1);
 
     const { hits } = this.state;
-let flag;
-
+    let flag;
     {hits.map(hit =>
-    
       {if (hit.name === value)(
-
         document.querySelector('.header').innerHTML = '',
         document.querySelector('.header').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.name))),
 
@@ -86,9 +80,9 @@ let flag;
         document.querySelector('.Containerflag').appendChild(document.createElement('p').appendChild(document.createTextNode('BANDERA'))),
         document.querySelector('.Containerflag').appendChild(document.createElement('img')).setAttribute('src', hit.flag)
       )
-      }
-      )
-      }
+    }
+  )
+}
     //DE ACUERDO CON LA CATEGORÍA SELECCIONADA SE BUSCA EN LA API
   }
       
@@ -107,9 +101,7 @@ let flag;
         </input>
         <button className='button' onClick={this.Search}>Buscar</button>
         <Containerinfo>
-
         </Containerinfo>
-
       </div>
     );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   }

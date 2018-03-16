@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/Components/Containercountry/Containerinput/images/favicon.png"/>
+  <img src="src/Components/Containercountry/Containerinput/images/logo.png"/>
 </p>
 
 ## Bienvenido a 'Country'

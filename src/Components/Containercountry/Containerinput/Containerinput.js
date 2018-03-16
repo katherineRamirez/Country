@@ -40,6 +40,7 @@ class App extends Component{
   //RENDER() SE EJECUTA
   Search = () =>{
     const input = document.querySelector('.input');
+
     input.innerHTML = '';
 
     let data;
@@ -48,9 +49,11 @@ class App extends Component{
 
     const { hits } = this.state;
 let flag;
+
     {hits.map(hit =>
-      
+    
       {if (hit.name === value)(
+
         document.querySelector('.header').innerHTML = '',
         document.querySelector('.header').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.name))),
 
@@ -102,13 +105,15 @@ let flag;
         
         <input placeholder="Indique el nombre del país" className = 'input'>
         </input>
-        <button onClick={this.Search}>Buscar</button>
+        <button className='button' onClick={this.Search}>Buscar</button>
         <Containerinfo>
 
         </Containerinfo>
+
       </div>
     );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   }
 }
+
 
 export default App;

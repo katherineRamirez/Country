@@ -16,10 +16,10 @@ body{
   font-weight: bold;
 }
 
-.label{
-  margin-right: 1em;
-}
+.styleMap{
+  margin-left: 13em;
 
+}
 
 .Containerinfo{
   display: flex;
@@ -74,6 +74,10 @@ body{
   
 /*   background-color: pink;
  */}
+ .Containerflag{
+  width: 10em;
+/*   background-color: pink;
+ */}
 
 img[src="https://restcountries.eu/data/chl.svg"]{
   width: 10em;
@@ -86,7 +90,6 @@ img[src="https://restcountries.eu/data/chl.svg"]{
     font-weight: bold;
 }
 
-
 .map {
   height: 300px;
 }
@@ -97,9 +100,9 @@ img[src="https://restcountries.eu/data/chl.svg"]{
     }
   }
 
-.ContainerMap{
+/*.ContainerMap{
   display: none;
-}
+}*/
 
 input{
   width: 100%;
@@ -141,3 +144,4 @@ button{
 -webkit-border-radius: 2px 2px 2px 2px;
 border: 0px solid #000000;
 }
+

@@ -16,9 +16,6 @@ body{
   font-weight: bold;
 }
 
-.label{
-  margin-right: 1em;
-}
 .styleMap{
   margin-left: 13em;
 
@@ -103,9 +100,9 @@ img[src="https://restcountries.eu/data/chl.svg"]{
     }
   }
 
-.ContainerMap{
+/*.ContainerMap{
   display: none;
-}
+}*/
 
 input{
   width: 100%;

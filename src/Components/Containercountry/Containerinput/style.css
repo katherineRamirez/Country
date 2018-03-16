@@ -40,6 +40,7 @@ body{
     font-weight: bold;
     display: flex;
     flex-direction: column;
+
    
 /*     background-color: pink;
  */}
@@ -74,14 +75,11 @@ body{
   
 /*   background-color: pink;
  */}
- .Containerflag{
-  width: 10em;
-/*   background-color: pink;
- */}
 
-img[src="https://restcountries.eu/data/chl.svg"]{
+img{
   width: 10em;
 }
+
 
 .Containerflag{
   display: flex;
@@ -119,10 +117,6 @@ input{
   margin-top: 2em;
   margin-right: 1em;
   margin-bottom: 3em;
-  border-radius: 2px 2px 2px 2px;
--moz-border-radius: 2px 2px 2px 2px;
--webkit-border-radius: 2px 2px 2px 2px;
-border: 0px solid #000000;
 }
 
 button{
@@ -144,4 +138,3 @@ button{
 -webkit-border-radius: 2px 2px 2px 2px;
 border: 0px solid #000000;
 }
-

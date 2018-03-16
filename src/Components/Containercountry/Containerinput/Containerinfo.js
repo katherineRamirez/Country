@@ -1,6 +1,6 @@
 import React from 'react';
 import Containerinput from './Containerinput';
-import './style.css';
+import './styleIfo.css';
 import Containercapital from './Containercapital';
 import Containerpopulation from './Containerpopulation';
 import Containerlanguages from './Containerlanguages';

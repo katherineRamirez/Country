@@ -1,5 +1,6 @@
 //DOCUMENTACIÓN: https://www.robinwieruch.de/react-fetching-data/
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Containerinfo from './Containerinfo';
 import capital from './images/capital.png';
 import population from './images/population.png';
@@ -115,5 +116,8 @@ let flag;
   }
 }
 
+App.propTypes = {
+  value: PropTypes.string,
+}
 
 export default App;

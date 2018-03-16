@@ -6,8 +6,7 @@ import population from './images/population.png';
 import language from './images/language.png';
 import coin from './images/coin.png';
 import continent from './images/continent.png';
-import Containermap from './ContainerMap';
-import Mapa from './map';
+
 
 import './style.css';
 

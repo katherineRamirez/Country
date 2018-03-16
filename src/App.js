@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Containercountry from './Components/Containercountry/index';
 import Presentation from './Components/Containercountry/presentation';
-import logo from './logo.svg';
+import logo from './logo.png';
+import physics from './physics.svg';
+
 import Title from './Components/Containercountry/Containerinput/Title';
 import Containerinfo from './Components/Containercountry/Containerinput/Containerinfo';
 import './media.css'
@@ -17,6 +19,12 @@ class App extends Component {
         <Containercountry  className='Containercountry'>
         
         </Containercountry>
+        <footer>
+          <p>Katherine Ramírez & Claudina Cortez | © 2018</p>
+          <p>Built with React  <img src={physics} className="App-physics" alt="physics" /></p>
+         
+
+        </footer>
       </div>
     )
   }

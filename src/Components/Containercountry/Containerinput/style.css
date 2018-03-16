@@ -138,3 +138,9 @@ button{
 -webkit-border-radius: 2px 2px 2px 2px;
 border: 0px solid #000000;
 }
+
+footer{
+  margin-top:-3.2em;
+  font-family: 'Pacifico', cursive;
+  color: #F48FB1;
+}

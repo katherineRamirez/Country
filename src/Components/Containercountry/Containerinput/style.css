@@ -33,7 +33,10 @@ body{
     justify-content: center;
     justify-content: space-around;
     margin-top:2em;
+<<<<<<< Updated upstream
     margin-bottom: 3em;
+=======
+>>>>>>> Stashed changes
 }
 
 .Containercapital{
@@ -68,13 +71,23 @@ img[src="https://restcountries.eu/data/chl.svg"]{
 
 
 .map {
+<<<<<<< Updated upstream
   height: 20px;
 
 }
 
+=======
+  height: 300px;
+}
+
+>>>>>>> Stashed changes
 @media screen and (min-width: 1024px){
     .map {
         height: 500px;
     }
+<<<<<<< Updated upstream
 
 }
+=======
+}
+>>>>>>> Stashed changes

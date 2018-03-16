@@ -4,7 +4,9 @@ import App from './Containerinput/Containerinput';
 import Containerinfo from './Containerinput/Containerinfo';
 const Containercountry = () =>(
   <div>
-    <App></App>
+    <App>
+
+    </App>
   </div>
 )
 

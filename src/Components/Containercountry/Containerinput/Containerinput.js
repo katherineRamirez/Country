@@ -36,6 +36,7 @@ class App extends Component{
   //RENDER() SE EJECUTA
   Search = () =>{
     const input = document.querySelector('.input');
+
     let data;
     value = input.value;
 
@@ -46,6 +47,10 @@ let flag;
       {if (hit.name === value)(
         document.querySelector('.header').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.name))),
 
+<<<<<<< Updated upstream
+=======
+        console.log('o', hit.name),
+>>>>>>> Stashed changes
         document.querySelector('.Containercapital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
         document.querySelector('.Containercapital').appendChild(document.createElement('img')).setAttribute('src', capital),
 
@@ -59,7 +64,10 @@ let flag;
         document.querySelector('.Containercurrencies').appendChild(document.createElement('img')).setAttribute('src', coin),
 
         document.querySelector('.Containersubregion').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.subregion))),
-        document.querySelector('.Containersubregion').appendChild(document.createElement('img')).setAttribute('src', continent)
+        document.querySelector('.Containersubregion').appendChild(document.createElement('img')).setAttribute('src', continent),
+
+        document.querySelector('.Containerflag').appendChild(document.createElement('p').appendChild(document.createTextNode('Bandera'))),
+        document.querySelector('.Containerflag').appendChild(document.createElement('img')).setAttribute('src', hit.flag)
       )
       }
       )

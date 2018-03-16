@@ -7,10 +7,13 @@ import Containerlanguages from './Containerlanguages';
 import Containercurrencies from './Containercurrencies';
 import Containersubregion from './Containersubregion';
 import Containerflag from './Containerflag';
+import Containermap from './ContainerMap'
+import Mapa from './map';
 
 
 const Containerinfo = () =>(
     <div className = 'Containerinfo'>
+
         <Containercapital></Containercapital>
         <Containerpopulation></Containerpopulation>
         <Containerlanguages></Containerlanguages>

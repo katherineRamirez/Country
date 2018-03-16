@@ -2,29 +2,24 @@ body{
   background-color: #015871;
   color: white;
 }
+
 .header{
   background-image: url('http://i.imgur.com/U3h0AEB.jpg');
-  height: 3em;
   width: 100%;
+  height: 2em;
+  padding-top: 1em;
   background-position: top;
   font-size: 3em;
-  padding-top: 2em;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
 }
-.input{
-  width: 20em;
-  margin-top: 2em;
-  margin-right: 1em;
-  margin-bottom: 3em;
-}
+
 .label{
   margin-right: 1em;
 }
-.Containerinfo{
-/*   border: 2px blue solid;
- */  max-height: 50em;
-  width: 100%;
-}
+
 
 .Containerinfo{
   display: flex;
@@ -34,26 +29,49 @@ body{
     justify-content: space-around;
     margin-top:2em;
     margin-bottom: 3em;
+    max-height: 50em;
+  width: 100%;
 }
 
 .Containercapital{
-    width: 10em;
+    width: 12em;
+    height: 15em;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+   
 /*     background-color: pink;
  */}
 .Containerpopulation{
-  width: 10em;
+  width: 12em;
+    height: 15em;
+    color: white;
+    font-weight: bold;
+
 /*   background-color: pink;
  */}
 .Containerlanguages{
   width: 10em;
+  color: white;
+    font-weight: bold;
+
 /*   background-color: pink;
  */}
 .Containercurrencies{
   width: 10em;
+  color: white;
+    font-weight: bold;
+
 /*   background-color: pink;
  */}
 .Containersubregion{
+  display: flex;
+  flex-direction: column;
   width: 10em;
+  color: white;
+    font-weight: bold;
+  
 /*   background-color: pink;
  */}
 
@@ -64,6 +82,8 @@ img[src="https://restcountries.eu/data/chl.svg"]{
 .Containerflag{
   display: flex;
   flex-direction: column;
+  color: white;
+    font-weight: bold;
 }
 
 
@@ -76,3 +96,48 @@ img[src="https://restcountries.eu/data/chl.svg"]{
         height: 500px;
     }
   }
+
+.ContainerMap{
+  display: none;
+}
+
+input{
+  width: 100%;
+  height: 2em;
+  padding: 0 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: 0;
+  background: transparent;
+  box-shadow:none;
+  background-color: aliceblue;
+    width: 20em;
+  margin-top: 2em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  border-radius: 2px 2px 2px 2px;
+-moz-border-radius: 2px 2px 2px 2px;
+-webkit-border-radius: 2px 2px 2px 2px;
+border: 0px solid #000000;
+}
+
+button{
+  height: 2em;
+  padding: 0 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: 0;
+  background: transparent;
+  box-shadow:none;
+  background-color: aliceblue;
+    width: 5em;
+  margin-top: 2em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  border-radius: 2px 2px 2px 2px;
+-moz-border-radius: 2px 2px 2px 2px;
+-webkit-border-radius: 2px 2px 2px 2px;
+border: 0px solid #000000;
+}

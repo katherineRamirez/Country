@@ -31,6 +31,11 @@ npm install
 ![segundo](src/Components/Containercountry/Containerinput/images/segundo.png)
 ![tercero](src/Components/Containercountry/Containerinput/images/tercero.png)
 
+## Demo
+![Primera](src/Components/Containercountry/Containerinput/images/2.png)
+
+![Segunda](src/Components/Containercountry/Containerinput/images/1.png)
+
 ## Colaboradoras
 
 :smile: [Claudina Cortés](https://github.com/claudinacr),

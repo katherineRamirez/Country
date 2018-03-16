@@ -6,8 +6,9 @@
 		.Containercapital, .Containerpopulation, .Containerlanguages, .Containercurrencies, .Containersubregion, .Containerflag{
 			margin-top: 2em;
 		}
-		.map {
-			width: 30em;
-  		height: 20px;
+		.styleMap{
+  		margin-left: 1em;
+  		width: 300px;
+  		height: 200px;
 		}
 }

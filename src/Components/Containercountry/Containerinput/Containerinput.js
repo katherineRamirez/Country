@@ -36,15 +36,21 @@ class App extends Component{
   //RENDER() SE EJECUTA
   Search = () =>{
     const input = document.querySelector('.input');
+
     let data;
     value = input.value;
 
     const { hits } = this.state;
 let flag;
+
     {hits.map(hit =>
-      
+    
       {if (hit.name === value)(
+        
+        console.log(hit.latlng[0]),
+        console.log(hit.latlng[1]),
         document.querySelector('.header').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.name))),
+
 
         document.querySelector('.Containercapital').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.capital))),
         document.querySelector('.Containercapital').appendChild(document.createElement('img')).setAttribute('src', capital),
@@ -59,7 +65,11 @@ let flag;
         document.querySelector('.Containercurrencies').appendChild(document.createElement('img')).setAttribute('src', coin),
 
         document.querySelector('.Containersubregion').appendChild(document.createElement('p').appendChild(document.createTextNode(hit.subregion))),
-        document.querySelector('.Containersubregion').appendChild(document.createElement('img')).setAttribute('src', continent)
+        document.querySelector('.Containersubregion').appendChild(document.createElement('img')).setAttribute('src', continent),
+
+        document.querySelector('.Containerflag').appendChild(document.createElement('p').appendChild(document.createTextNode('Bandera'))),
+        document.querySelector('.Containerflag').appendChild(document.createElement('img')).setAttribute('src', hit.flag)
+      
       )
       }
       )
@@ -80,7 +90,7 @@ let flag;
         <strong><label className = 'label'>QUE PAIS TE GUSTARIA CONOCER?</label></strong>
         <input placeholder="Indique el nombre del país" className = 'input'>
         </input>
-        <button onClick={this.Search}>Buscar</button>
+        <button className='button' onClick={this.Search}>Buscar</button>
         <div>{this.nameinput}</div>
         <Apps></Apps>
         <Containerinfo></Containerinfo>
@@ -88,5 +98,6 @@ let flag;
     );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   }
 }
+
 
 export default App;

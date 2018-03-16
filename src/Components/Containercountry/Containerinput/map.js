@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Gmaps, Marker, InfoWindow, Circle} from 'react-gmaps';
 import Containerinput from './Containerinput';
+
  
 
-
 const coords = {
-  lat: -30,
-  lng: -71
+  lat: 24.4547200,
+  lng: -97.9519500
 };
 
 
@@ -35,12 +35,12 @@ class Mapa extends React.Component {
  
   render() {
     return (
-      <Gmaps
+      <Gmaps className='styleMap'
         width={'800px'}
         height={'600px'}
         lat={coords.lat}
         lng={coords.lng}
-        zoom={6}
+        zoom={3}
         loadingMessage={'Be happy'}
         params={params}
         onMapCreated={this.onMapCreated}>
@@ -65,4 +65,6 @@ class Mapa extends React.Component {
  
 };
  
+
+
 export default Mapa;

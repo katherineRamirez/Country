@@ -20,6 +20,10 @@ body{
 .label{
   margin-right: 1em;
 }
+.styleMap{
+  margin-left: 13em;
+
+}
 .Containerinfo{
 /*   border: 2px blue solid;
  */  max-height: 50em;
@@ -56,6 +60,10 @@ body{
   width: 10em;
 /*   background-color: pink;
  */}
+ .Containerflag{
+  width: 10em;
+/*   background-color: pink;
+ */}
 
 img[src="https://restcountries.eu/data/chl.svg"]{
   width: 10em;
@@ -67,14 +75,4 @@ img[src="https://restcountries.eu/data/chl.svg"]{
 }
 
 
-.map {
-  height: 20px;
 
-}
-
-@media screen and (min-width: 1024px){
-    .map {
-        height: 500px;
-    }
-
-}

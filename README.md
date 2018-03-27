@@ -4,7 +4,5 @@ Country es una aplicación que tiene como propósito mostrar información de tod
 
 ![demo](src/Components/Containercountry/Containerinput/images/1.png)
 
-## Proyect desarrollado para 
-
-[Laboratoria](http://www.laboratoria.la/) Chile
+## Proyecto desarrollado en [Laboratoria](http://laboratoria.la) Chile
 

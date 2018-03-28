@@ -1,6 +1,6 @@
 # Country
 
-Country es una aplicación que tiene como propósito mostrar información de todos los paises. Va dirigido a personas que deseen obtener datos relevantes, introduciendo el nombre del país a buscar en el input buscar.
+Country es una aplicación que tiene como propósito mostrar información de todos los paises. Va dirigido a personas que deseen obtener datos relevantes según el país que desea buscar.
 
 ![demo](src/Components/Containercountry/Containerinput/images/1.png)
 
